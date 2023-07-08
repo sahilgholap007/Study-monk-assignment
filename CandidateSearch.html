@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Graduate&family=MuseoModerno:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Graduate&display=swap"
+    rel="stylesheet"
+  />
+  <title>Candidate Search</title>
+  <link rel="stylesheet" type="text/css" href="CandidateSearch.css">
+</head>
+<body>
+  <h1>Candidate Search</h1>
+  <div id="search-container">
+    <label for="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Location:</label>
+    <input type="text" id="location" placeholder="Enter location">
+
+    <label for="job-role"><i class="fa fa-suitcase" aria-hidden="true"></i> Job Role:</label>
+    <input type="text" id="job-role" placeholder="Enter job role">
+
+    <button onclick="searchCandidates()">Search</button>
+    <a class="logout-btn" href="/Home.html">Logout</a>
+  </div>
+  <h2>Matching Candidates</h2>
+  <div id="candidates-container">
+
+    <ul id="candidates-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
